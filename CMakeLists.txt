@@ -3,4 +3,4 @@ project(CSES_problem_set)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CSES_problem_set introductory/repetitions/main.cpp)
+add_executable(CSES_problem_set introductory/increasing_array/main.cpp)
