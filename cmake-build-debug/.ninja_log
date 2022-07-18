@@ -1,8 +1,0 @@
-# ninja log v5
-0	27	1658175722192173795	build.ninja	72e893ec7f64888d
-0	301	1658175722500175084	CMakeFiles/CSES_problem_set.dir/introductory/weird_algorithm/main.cpp.o	67141ed5d762a067
-302	390	1658175722588175452	CSES_problem_set	94bbc7626ca94fb9
-0	240	1658175753692306696	CMakeFiles/CSES_problem_set.dir/introductory/weird_algorithm/main.cpp.o	67141ed5d762a067
-240	318	1658175753772307037	CSES_problem_set	94bbc7626ca94fb9
-0	245	1658175760716336644	CMakeFiles/CSES_problem_set.dir/introductory/weird_algorithm/main.cpp.o	67141ed5d762a067
-245	326	1658175760796336985	CSES_problem_set	94bbc7626ca94fb9
