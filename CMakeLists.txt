@@ -3,4 +3,4 @@ project(CSES_problem_set)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CSES_problem_set main.cpp)
+add_executable(CSES_problem_set introductory/weird_algorithm/main.cpp)
