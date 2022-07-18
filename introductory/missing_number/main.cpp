@@ -14,7 +14,7 @@ long long missing_number(std::vector<long long >& input_numbers) {
     }
 
     sort(input_numbers.begin(),input_numbers.end());
-    for(unsigned long long i = 0u; i < input_numbers.size(); ++i) {
+    for(unsigned long long i = 0u; i < input_numbers.size() - 1; ++i) {
         if(input_numbers[i+1] != input_numbers[i] + 1) {
             return input_numbers[i] + 1;
         }
