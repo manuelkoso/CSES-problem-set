@@ -2,7 +2,6 @@
 // Created by koso on 19/07/22.
 //
 
-#include <array>
 #include <vector>
 #include <algorithm>
 #include "iostream"
@@ -25,18 +24,19 @@ bool is_permutation_beautiful(std::vector<unsigned long long> vector) {
 void permutations(unsigned long long n) {
 
     std::vector<unsigned long long> input;
-    for(unsigned long long i = 1u; i <= n; ++i) {
+    for(unsigned long long i = 2u; i <= n; i=i+2) {
         input.push_back(i);
     }
 
-    do {
-        if(is_permutation_beautiful(input)) {
-            print_vector(input);
-            return;
-        }
-    } while(std::next_permutation(input.begin(), input.end()));
+    for(unsigned long long i = 1u; i <= n; i=i+2) {
+        input.push_back(i);
+    }
 
-    std::cout << "NO SOLUTION" << std::endl;
+    if(is_permutation_beautiful(input)) {
+        print_vector(input);
+    } else {
+        std::cout << "NO SOLUTION" << std::endl;
+    }
 
 }
 
