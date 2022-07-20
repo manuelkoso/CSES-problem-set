@@ -1,6 +1,6 @@
 # CSES-problem-set
 
-This repository contains my personal solutions to the [CSES problem set](https://cses.fi/problemset/).
+This repository contains my personal solutions for the [CSES problem set](https://cses.fi/problemset/).
 
 I use the following books to (try to) solve these problems and in general to study algorithm design:
 
