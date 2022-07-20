@@ -13,12 +13,8 @@ unsigned long long int number_spiral(unsigned long long row, unsigned long long 
     } else {
         near_diagonal_location = col;
     }
-    unsigned long long diagonal_value = 1;
-    unsigned long long summer = 0;
-    for (unsigned long long i = 1u; i <= near_diagonal_location; ++i) {
-        diagonal_value = diagonal_value + summer;
-        summer = summer + 2;
-    }
+
+    unsigned long long diagonal_value = (near_diagonal_location-1)*(near_diagonal_location) + 1;
 
     if (near_diagonal_location == row && near_diagonal_location == col) {
         return diagonal_value;
@@ -27,7 +23,7 @@ unsigned long long int number_spiral(unsigned long long row, unsigned long long 
     } else if (near_diagonal_location > col && near_diagonal_location % 2 == 0) {
         return diagonal_value + near_diagonal_location - col;
     } else if (near_diagonal_location > row && near_diagonal_location % 2 == 0) {
-        return diagonal_value - near_diagonal_location - row;
+        return diagonal_value - near_diagonal_location + row;
     } else {
         return diagonal_value - near_diagonal_location + col;
     }
