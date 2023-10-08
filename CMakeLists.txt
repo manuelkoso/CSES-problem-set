@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 project(CSES_problem_set)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CSES_problem_set introductory/number_spiral/main.cpp)
+add_executable(problem introductory/increasing_array/main.cpp)
